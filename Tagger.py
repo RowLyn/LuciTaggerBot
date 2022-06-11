@@ -24,35 +24,35 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**🌀LuciTaggerBot**\n ile Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
+  await event.reply("**BakuHouseTagBot⚡ **\n ilə Grubunuzdakı İstifadəçilərə  Etiket Ata Bilərəm. \nƏmrlər Üçün 🤙🏼 /help yaz**",
                     buttons=(
                    
-		      [Button.url('Beni Gruba Ekle ➕', 'https://t.me/lucitaggerbot?startgroup=a')],
-                      [Button.url('Support🛠', 'https://t.me/LuciSup')],
-                      [Button.url('Resmi Kanal📣', 'https://t.me/LuciBots')],
-		      [Button.url('Developer👨🏻‍💻', 'https://t.me/LuciMarka')],
+		      [Button.url('Məni Gruba Əlavə Et ➕', 'https://t.me/bakuhousetagbot?startgroup=a')],
+                      [Button.url('Support🔥', 'https://t.me/Rowlyn')],
+                      [Button.url('Rəsmi Kanal🏆', 'https://t.me/Rowlyn')],
+		      [Button.url('Developer🐊', 'https://t.me/Rowlyn')],
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🌀 LuciTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Tag Eder**\n\n**/start - botu başlatır**"
+  helptext = "** BakuHouseTagBot Əmrləri**\n\n**/tag <sebeb> - 5-li Etiket Atır**\n\n**/etag <sebeb> - Emoji ile etiketləyir**\n\n**/tektag sebeb - İstifadəçiləri Tək-Tək Etiketləyər**\n\n**/admins sebeb - Adminləri Tək-Tək Tag Edər**\n\n**/start - botu başladar**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Beni Gruba Ekle➕', 'https://t.me/lucitaggerbot?startgroup=a')],
-                      [Button.url('Support👨‍💻', 'https://t.me/LuciSup')],
-                      [Button.url('Resmi Kanal🔖', 'https://t.me/LuciBots')],
-		      [Button.url('Developer🧑‍🔧', 'https://t.me/LuciMarka')],
+                      [Button.url('Məni Gruba Əlavə Et➕', 'https://t.me/bakuhousetagbot?startgroup=a')],
+                      [Button.url('Support🫀', 'https://t.me/Rowlyn')],
+                      [Button.url('Rəsmi Kanal💸', 'https://t.me/Rowlyn')],
+		      [Button.url('Developer✝️', 'https://t.me/Rowlyn')],
                     ),
                     link_preview=False
                    )
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**Çok özellikleri Etiket Botu Bulmaya Çalışan Grub Sahibleri @LuciTaggerBot Size Göre:\n\n📌 5-li etiket\n📌 Emoji etiket\n📌 Tekli Etiket\n📌 Yalnız Yöneticileri etiketleme\n📌\n\n Böyle Çok özellikli @LuciTaggerBot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelir , etiket ata bilirsiz **"
-  await event.reply(helptext,
+  helptext = "**Mükəmməl özəllikləri Olan  Tagger Botu Tapmağa Çalışanlar Üçün  @BakuHouseTagBot Sizə Görədir:\n\n⚡ 5-li tag\n⚡ Emoji ilə tag\n🔥 Təlli tag\n🔥 Sadəcə Adminləri Tag Etmək\n😝\n\n @BakuHouseTagBot 'u grubuvuza Admin olarağ əlavə edib rahadlığla istifadəçilərə , etiket ata bilərsiniz **"
+  await event.reply(helptext)
                     buttons=(
-                      [Button.url('Botu Gruba Ekle➕', 'https://t.me/lucitaggerbot?startgroup=a')],
+                      [Button.url('Botu Gruba Əlavə Et➕', 'https://t.me/bakuhousetagbot?startgroup=a')],
                     ),
                     link_preview=False
                    )
@@ -72,13 +72,13 @@ emoji = "🐵 🦁 🐯 🐱 🐶 🐺 🐻 🐨 🐼 🐹 🐭 🐰 🦊 🦝 �
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
-    return await event.respond("**Bu komutu gruplar ve kanallar için geçerli❗**")
+    return await event.respond("**Bu əmr grublar və kanallar üçün keçerlidir👍🏼**")
   
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("**Bu komutu sadace yoneticiler kullana bilir〽️**")
+    return await event.respond("**Bu əmr-i sadəcə adminlər istifadə edə bilər🚬**")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -87,11 +87,11 @@ async def mentionall(event):
     mode = "text_on_reply"
     msg = event.reply_to_msg_id
     if msg == None:
-        return await event.respond("**Geçmiş mesajlar için etiket ede bilmiom**")
+        return await event.respond("**Keçmiş mesajlar üçün tag edə bilmirəm**")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("Etiket Yapmak için sebeb yok❗️")
+    return await event.respond("Tag etmək üçün sebeb yoxdu😴")
   else:
-    return await event.respond("**Etikete Başlamak için sebeb yazın...!**")
+    return await event.respond("**Tağa Başlamağ üçün səbəb yazın🪐**")
   
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
