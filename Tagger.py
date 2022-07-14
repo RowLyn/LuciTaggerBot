@@ -24,24 +24,24 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**BakuHouseTagBot⚡ **\n ilə Grubunuzdakı İstifadəçilərə  Etiket Ata Bilərəm. \nƏmrlər Üçün 🤙🏼 /help yaz**",
+  await event.reply("**ᴛᴏʀɴᴀᴅᴏ ᴛᴀɢɢᴇʀ ʙᴏᴛ⚡ **\n ilə Grubunuzdakı İstifadəçilərə  Etiket Ata Bilərəm. \nƏmrlər Üçün 🤙🏼 /help yaz**",
                     buttons=(
                    
-		      [Button.url('Məni Gruba Əlavə Et ➕', 'https://t.me/bakuhousetagbot?startgroup=a')],
-                      [Button.url('Support🔥', 'https://t.me/Rowlyn')],
-                      [Button.url('Rəsmi Kanal🏆', 'https://t.me/Rowlyn')],
+		      [Button.url('Məni Gruba Əlavə Et ➕', 'https://t.me/tornadotaggerbot?startgroup=a')],
+                      [Button.url('Support🔥', 'https://t.me/NemesisChat')],
+                      [Button.url('Rəsmi Kanal🏆', 'https://t.me/RowlynBots')],
 		      [Button.url('Developer🐊', 'https://t.me/Rowlyn')],
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "** BakuHouseTagBot Əmrləri**\n\n**/tag <sebeb> - 5-li Etiket Atır**\n\n**/etag <sebeb> - Emoji ile etiketləyir**\n\n**/tektag sebeb - İstifadəçiləri Tək-Tək Etiketləyər**\n\n**/admins sebeb - Adminləri Tək-Tək Tag Edər**\n\n**/start - botu başladar**"
+  helptext = "** ᴛᴏʀɴᴀᴅᴏ ᴛᴀɢɢᴇʀ  Əmrləri**\n\n**/tag <sebeb> - 5-li Etiket Atır**\n\n**/etag <sebeb> - Emoji ile etiketləyir**\n\n**/tektag sebeb - İstifadəçiləri Tək-Tək Etiketləyər**\n\n**/admins sebeb - Adminləri Tək-Tək Tag Edər**\n\n**/start - botu başladar**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Məni Gruba Əlavə Et➕', 'https://t.me/bakuhousetagbot?startgroup=a')],
-                      [Button.url('Support🫀', 'https://t.me/Rowlyn')],
-                      [Button.url('Rəsmi Kanal💸', 'https://t.me/Rowlyn')],
+                      [Button.url('Məni Gruba Əlavə Et➕', 'https://t.me/tornadotaggerbot?startgroup=a')],
+                      [Button.url('Support🫀', 'https://t.me/NemesisChat')],
+                      [Button.url('Rəsmi Kanal💸', 'https://t.me/RowlynBots')],
 		      [Button.url('Developer✝️', 'https://t.me/Rowlyn')],
                     ),
                     link_preview=False
@@ -49,10 +49,10 @@ async def help(event):
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**Mükəmməl özəllikləri Olan  Tagger Botu Tapmağa Çalışanlar Üçün  @BakuHouseTagBot Sizə Görədir:\n\n⚡ 5-li tag\n⚡ Emoji ilə tag\n🔥 Təlli tag\n🔥 Sadəcə Adminləri Tag Etmək\n😝\n\n @BakuHouseTagBot 'u grubuvuza Admin olarağ əlavə edib rahadlığla istifadəçilərə , etiket ata bilərsiniz **"
+  helptext = "**Mükəmməl özəllikləri Olan  Tagger Botu Tapmağa Çalışanlar Üçün  @TornadoTaggerBot Sizə Görədir:\n\n⚡ 5-li tag\n⚡ Emoji ilə tag\n🔥 Təlli tag\n🔥 Sadəcə Adminləri Tag Etmək\n😝\n\n @TornadoTaggerBot 'u grubuvuza Admin olarağ əlavə edib rahadlığla istifadəçilərə , etiket ata bilərsiniz **"
   await event.reply(helptext)
                     buttons=(
-                      [Button.url('Botu Gruba Əlavə Et➕', 'https://t.me/bakuhousetagbot?startgroup=a')],
+                      [Button.url('Botu Gruba Əlavə Et➕', 'https://t.me/tornadotaggerbot?startgroup=a')],
                     ),
                     link_preview=False
                    )
