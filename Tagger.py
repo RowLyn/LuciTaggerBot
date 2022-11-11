@@ -24,36 +24,38 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("Black Baku Tagger⚡\n İlə Grubunuzdakı İstifadəçilərə  Etiket Ata Bilərəm. \nƏmrlər Üçün 🤙🏼 /help yaz",
+  await event.reply("ɴᴀᴋɪ ᴄɪᴛʏ ᴛᴀɢɢᴇʀ⚡\n ɪʟᴇ ɢʀᴜʙᴜɴᴜᴢᴅᴀᴋɪ ɪsᴛɪғᴀᴅᴇᴄɪʟᴇʀɪ ᴄ̧ᴀɢɪʀᴀ ɴɪʟᴇʀᴇᴍ A \nᴇᴍʀʟᴇʀ ᴜ̈ᴄ̧ᴜ̈ɴ /help ʏᴀᴢ✅",
                     buttons=(
                    
-		      [Button.url('Məni Gruba Əlavə Et ➕', 'https://t.me/blackbakutaggerbot?startgroup=a')],
-                      [Button.url('Support🔥', 'https://t.me/BakuCC')],
-                      [Button.url('Rəsmi Kanal🏆', 'https://t.me/RepoSatis')],
-		      [Button.url('Developer🐊', 'https://t.me/Rowlyn')],
+		      [Button.url('ᴍᴇɴɪ ɢʀᴜʙᴀ ᴇʟᴀᴠᴇ ᴇᴛ ➕', 'https://t.me/bakucitytaggerbot?startgroup=a')],
+                      [Button.url('ɢʀᴜʙᴜᴍᴜᴢ🔥', 'https://t.me/BakuCity')],
+                      [Button.url('ᴋᴀᴍᴀʟɪᴍɪᴢ', 'https://t.me/BakucityResmi')],
+		      [Button.url('ʜᴇʀ ʙɪʀ ᴛᴇᴘᴏɴᴜɴ sᴀᴛɪᴅɪ📌', 'https://t.me/RepoSatis')],
+                      [Button.url('ᴅᴇᴠᴇʟᴏᴘᴇʀ🐊', 'https://t.me/Rowlyn')],
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "Black Baku Tagger Botunun Əmrləri Bunlardir\n\n**/tag <sebeb> - 5-li Etiket Atır**\n\n**/etag <sebeb> - Emoji ile etiketləyir**\n\n**/tektag sebeb - İstifadəçiləri Tək-Tək Etiketləyər**\n\n**/admins sebeb - Adminləri Tək-Tək Tag Edər**\n\n**/start - botu başladar**"
+  helptext = "ʙᴀᴋᴜ ᴄɪᴛʏ ᴛᴀɢɢᴇʀ ʙᴏᴛᴜɴ ᴇᴍʀʟᴇʀɪ ʙᴜɴʟᴀʀᴅɪʀ\n\n**/tag <sebeb> - 5-li tag Atır**\n\n**/etag <sebeb> - Emoji ile tag edir**\n\n**/tektag sebeb - İstifadəçiləri Tək-Tək tag Edir**\n\n**/admins sebeb - Adminləri Tək-Tək Tag Edər**\n\n**/start - botu başladar**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Məni Gruba Əlavə Et➕', 'https://t.me/blackbakutagger?startgroup=a')],
-                      [Button.url('Support🫀', 'https://t.me/BakuCC')],
-                      [Button.url('Rəsmi Kanal💸', 'https://t.me/RepoSatis')],
-		      [Button.url('Developer✝️', 'https://t.me/Rowlyn')],
+                      [Button.url('ᴍᴇɴɪ ɢʀᴜʙᴀ ᴇʟᴀᴠᴇ ᴇᴛ➕', 'https://t.me/blackbakutagger?startgroup=a')],
+                      [Button.url('ɢʀᴜʙᴜᴍᴜᴢ⚜️', 'https://t.me/BakuCiyresmi')],
+                      [Button.url('ʀᴇsᴍɪ ᴋᴀɴᴀʟ💸', 'https://t.me/bakucityresmi')],
+                      [Button.url('ʜᴇʀ ʙɪʀ ʀᴇᴘᴏ sᴀᴛɪşɪ', 'https://t.me/RepoSatis')],
+		      [Button.url('Dᴇᴠᴇʟᴏᴘᴇʀ🪐', 'https://t.me/Rowlyn')],
                     ),
                     link_preview=False
                    )
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "** Reklam & Business : @Rowlyn  **"
+  helptext = "**ʜᴇʀ ʙɪᴛ ʀᴇᴘᴏ sᴀᴛɪşɪ ᴜ̈ᴄ̧ᴜ̈ɴ @RepoSatis $ ᴇʟᴀǫᴇ @Rowlyn**"
   await event.reply(helptext,
                     buttons=(
                         [
-                            Button.url('Botu Gruba Elave Et➕', 'https://t.me/blackbakutaggerbot?startgroup=a'),
+                            Button.url('Botu Gruba Elave Et➕', 'https://t.me/bakucitytaggerbot?startgroup=a'),
                         ],
                     ),
                     link_preview=False
